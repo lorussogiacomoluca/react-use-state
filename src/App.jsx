@@ -1,5 +1,6 @@
 import Header from "./assets/components/Header";
 import Main from "./assets/components/Main";
+import languages from "./assets/languages";
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <div className="container vh-100 d-flex justify-content-center align-items-center">
         <div className="container">
           <Header />
-          <Main />
+          <Main languages={languages} />
         </div>
       </div>
     </>
