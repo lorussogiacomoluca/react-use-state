@@ -9,7 +9,11 @@ const Main = (props) => {
   return (
     <div className="row d-flex">
       <div className="col m-5 d-flex gap-3">
-        <ButtonsBar languages={languages} setActiveTab={setActiveTab} />
+        <ButtonsBar
+          languages={languages}
+          setActiveTab={setActiveTab}
+          activeTab={activeTab}
+        />
       </div>
       <div className="row ">
         <div className="col m-5 gap-3">
