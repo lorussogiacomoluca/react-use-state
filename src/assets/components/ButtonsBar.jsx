@@ -1,16 +1,14 @@
 import React from "react";
 
-const ButtonsBar = ({ languages }) => {
+const ButtonsBar = ({ languages, setActiveTab }) => {
   return (
     <>
-      {/* <button className="btn btn-warning">HTML</button>
-      <button className="btn btn-primary">CSS</button>
-      <button className="btn btn-primary">Javascript</button>
-      <button className="btn btn-primary">NodeJs</button>
-      <button className="btn btn-primary">Express</button>
-      <button className="btn btn-primary">React</button> */}
       {languages.map((language) => (
-        <button key={`lang-${language.id}`} className="btn btn-primary">
+        <button
+          key={language.id}
+          onClick={() => setActiveTab(language.id)}
+          className="btn btn-primary"
+        >
           {language.title}
         </button>
       ))}
